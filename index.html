@@ -20,25 +20,7 @@
         <button id="playButton">Play/Pause</button>
         <button id="muteButton">Mute/Unmute</button>
     </main>
-    <script>
-        const video = document.querySelector("video")
-        const button = document.querySelector('button')
-
-        function MediaPlayer(config) {
-            this.media = config.el
-        }
-
-        MediaPlayer.prototype.play = function() {
-            video.play();
-        }
-
-        const player = new MediaPlayer({
-            el: video
-        })
-
-        button.onclick = () => player.play()
-    </script>
-
+    <script src="assets/index.js"></script>
 </body>
 
 </html>
