@@ -1,0 +1,11 @@
+{
+    "name": "profesionaljavascript",
+    "version": "1.0.0",
+    "description": "Curso PRrofesional de Jacascript",
+    "main": "index.js",
+    "scripts": {
+        "test": "live-server"
+    },
+    "author": "Jefferson Lindao",
+    "license": "MIT"
+}
