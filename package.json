@@ -1,8 +1,7 @@
 {
     "name": "profesionaljavascript",
     "version": "1.0.0",
-    "description": "Curso PRrofesional de Jacascript",
-    "main": "index.js",
+    "description": "Curso Profesional de Javascript",
     "scripts": {
         "test": "live-server"
     },
