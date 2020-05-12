@@ -3,8 +3,14 @@
     "version": "1.0.0",
     "description": "Curso Profesional de Javascript",
     "scripts": {
-        "test": "live-server"
+        "test": "parcel index.html ejercicio/ejercicio.html ejercicio/**/*.html"
     },
     "author": "Jefferson Lindao",
-    "license": "MIT"
+    "license": "MIT",
+    "browserslist": [
+        "last 1 Chrome version"
+    ],
+    "devDependencies": {
+        "typescript": "^3.8.3"
+    }
 }

@@ -3,7 +3,9 @@
 /public/storage
 /storage/*.key
 /vendor
+/.cache
 /.idea
+/dist
 /.vagrant
 Homestead.json
 Homestead.yaml
