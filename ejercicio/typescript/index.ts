@@ -1,21 +1,26 @@
 /**
- * Funciones
+ * Inferfaces
  */
-function add (a:number, b: number):number{
-    return a+b;
+enum Color{
+    Rojo = 'Rojo',
+    Verde = 'Verde'
 }
-const sum = add(4,6)
+interface Rectangulo{
+    ancho:number
+    alto:number
+    color?: Color
+}
+let rect: Rectangulo={
+    ancho:4,
+    alto:6
+}
+function area(r:Rectangulo):number{
+    return r.alto*r.ancho
+}
+const areaRect = area(rect)
+console.log(areaRect)
 
-function createAdder(a:number):(number) =>number{
-    return function (b:number){
-        return b+a
-    }
+rect.toString = function(){
+    return this.color ? `Un Rectangulo ${this.color}`:`Un rectangulo`
 }
-const addFour = createAdder(4)
-const fourPlust = addFour(6)
-
-function fullName(firstName:string, lastName: string ='Lindao'): string{
-    return `${firstName} ${lastName}`
-}
-const jeffer=fullName('Jefferson', 'Marquez')
-console.log(jeffer)
+console.log(rect.toString())
