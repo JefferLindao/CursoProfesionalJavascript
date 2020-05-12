@@ -1,40 +1,21 @@
 /**
- * tipo de dato booleano
+ * Funciones
  */
-let muted: boolean = true 
-muted = false 
-/**
- * tipo de dato number
- */
-let age = 4
-let numerador: number = 43
-let denominador: number = age
-let resultado = numerador/denominador
-/**
- * tipo de dato string
- */
-let nombre: string = 'Jefferson'
-let saludo = `Me llamo ${nombre}`
-/**
- * tipo arreglo
- */
-let people: string[] = []
-people=['Jefferson','Fernado','Gonzalo']
+function add (a:number, b: number):number{
+    return a+b;
+}
+const sum = add(4,6)
 
-let peopleAndNumber: Array<string|number>=[]
-peopleAndNumber.push('Jose')
-peopleAndNumber.push(1523)
-// Enum
-enum Color{
-    Rojo = 'Rojo',
-    Verde = 'Verde',
-    Azul = 'Azul'
+function createAdder(a:number):(number) =>number{
+    return function (b:number){
+        return b+a
+    }
 }
-let colorFavorito: Color = Color.Verde
-console.log(`Mi color favorito es ${colorFavorito}`)
-// Any
-let comodin: any = 'Joker'
-// Object
-let someObject: object  = {
-    type:'Wildcard'
+const addFour = createAdder(4)
+const fourPlust = addFour(6)
+
+function fullName(firstName:string, lastName: string ='Lindao'): string{
+    return `${firstName} ${lastName}`
 }
+const jeffer=fullName('Jefferson', 'Marquez')
+console.log(jeffer)
